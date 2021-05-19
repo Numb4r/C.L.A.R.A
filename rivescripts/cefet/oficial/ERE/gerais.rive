@@ -1,0 +1,16 @@
+! version = 2.0
+
+//TODO Transformar os links ein variaveis
+
++ onde[ posso] encontr(o|ar)[ mais] informacoes[ sobre][ o] ere
+- https://www.cefetmg.br/ensino-remoto-emergencial/ \n
+^ https://www.cefetmg.br/ensino-remoto-emergencial/perguntas-e-respostas/
+
++ [*] horari(o|os) [ de] aul(a|as)[ (do|dos)][ cursos] superio(r|res) {weight=100}
+- https://www.divinopolis.cefetmg.br/alunos/horario-2/graduacao-2/
+
++ [*] horari(o|os) [ de] aul(a|as)[ (do|dos)][ cursos] tecnic(o|os) {weight=100}
+- https://www.divinopolis.cefetmg.br/alunos/horario-2/cursos-tecnicos/
+
++ [*] horari(o|os) [ de] aul(a|as) [*] {weight=1}
+- https://www.divinopolis.cefetmg.br/ere-informacoes-locais/
