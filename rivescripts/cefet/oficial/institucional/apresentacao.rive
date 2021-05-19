@@ -1,0 +1,39 @@
+! version = 2.0
+// ! array campus |Belo Horizonte|Belo Horizonte|Leopoldina|
+// ^Araxá | Divinópolis|Belo Horizonte|Timóteo|
+// ^Varginha|Nepomuceno|Curvelo|Contagem|
+> object campus javascript
+    var roman = ["I","II","III","IV","V","VI","VII","VIII","IX","X","XI"]
+    var campusN = [
+    "Belo Horizonte",
+    "Belo Horizonte",
+    "Leopoldina",
+    "Araxá",
+    "Divinópolis",
+    "Belo Horizonte",
+    "Timóteo",
+    "Varginha",
+    "Nepomuceno",
+    "Curvelo",
+    "Contagem"]
+
+    var str = arguments[1]
+    //Arrumar entrada com numeros
+    if (!isNaN(parseInt(str))){
+        str = str - 1
+        return campusN[roman[str]]
+    }else{
+        str = str.toString().toUpperCase()
+        var index = roman.indexOf(str)
+        if(index == -1)
+            return "Esse campus nao existe"
+         return "Campus "+campusN[index];   
+    }
+    
+< object
+
++ campus *
+- <call>campus <star></call>
+
+// - <call>campus <star></call>
+
