@@ -1,0 +1,15 @@
+{
+  "name": "clara-chatbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Numb4r",
+  "license": "MIT",
+  "dependencies": {
+    "discord.app": "^0.0.1-security",
+    "rivescript": "^2.1.0"
+  }
+}
