@@ -14,3 +14,10 @@
 
 + [*] horari(o|os)[ de] aul(a|as) [*] {weight=1}
 - https://www.divinopolis.cefetmg.br/ere-informacoes-locais/
+
++ [*] horari(o|os)[ de] laboratori(o|os)
+- https://www.divinopolis.cefetmg.br/alunos/horario-2/laboratorios/
+
++ [*] contatos[ ere]
+- https://www.divinopolis.cefetmg.br/wp-content/uploads/sites/8/2020/03/Contatos-ERE.pdf
+
