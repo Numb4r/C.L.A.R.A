@@ -23,6 +23,4 @@ function loading_done() {
     })
 }
 
-module.exports={
-    bot
-}
+module.exports = bot
