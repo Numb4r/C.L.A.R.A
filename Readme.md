@@ -1,5 +1,5 @@
 # C.L.A.R.A
-C.L.A.R.A,ou Clara, (Central Lógica para Atendimento e Redirecionamento de Aluno) e um chatbot que pretende ajudar os alunos do CEFET-MG Campus V (Divinopolis) sobre os assuntos relacionados a instituicao, as aulas e de forma geral. Ela e representada como uma aluna da instituicao com o intuito de se aproximar mais do usuario final.
+C.L.A.R.A,ou Clara, (Central Lógica de Atendimento e Redirecionamento de Aluno) e um chatbot que pretende ajudar os alunos do CEFET-MG Campus V (Divinopolis) sobre os assuntos relacionados a instituicao, as aulas e de forma geral. Ela e representada como uma aluna da instituicao com o intuito de se aproximar mais do usuario final.
 
 # Como rodar
 
