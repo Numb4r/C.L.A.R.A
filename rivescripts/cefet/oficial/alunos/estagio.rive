@@ -9,6 +9,11 @@
 + [*] estagio [*]
 - O que deseja saber sobre a parte de estagio? {topic=estagio}
 
++ * estagio [*] {weight=100}
+- {topic=estagio} {@ <star>}
++ [*] estagio * {weight=100}
+- {topic=estagio} {@ <star>}
+
 > topic estagio
 + [*] sobre [*]
 - O estagio e uma atividade curricular com a finalidade de aprendizagem profissional.
@@ -18,7 +23,7 @@
 ^ Se precisar mais de alguma informacao, entre no portal de estagio do CEFET : https://www.estagio.cefetmg.br \n
 ^ Deseja saber mais alguma coisa sobre o programa de estagio?
 
-+ [*] ([quem ][*]responsav(el|eis)|trabalha|)
++ [*] ([quem ][*]responsav(el|eis)|trabalha) [*]
 - O Coordenador Geral e  <bot coordgeralestagio>, o subcoordenador e <bot subcoordgeralestagio>.
 ^ O responsavel pelo setor de estagio em Divinopolis e <bot setorestagio>, um amor de pessoa :).\n 
 ^ Deseja saber mais alguma coisa sobre o estagio?
