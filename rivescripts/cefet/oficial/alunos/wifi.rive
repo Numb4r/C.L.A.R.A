@@ -2,7 +2,7 @@
 
 // TODO: Discernir entre aluno/professor, perguntar qual SO usa
 
-+ [*] wi(-fi|fi) [*]
++ [*] wi([*]fi|fi) [*]
 - Parece que voce esta com alguma dificuldade com o wifi.
 ^ Ele e problematico de se configurar mesmo,nao se preocupe.\n 
 ^ Tente seguir este tutorial (https://www.divinopolis.cefetmg.br/wp-content/uploads/sites/8/2016/11/Aluno.pdf) 
