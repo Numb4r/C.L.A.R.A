@@ -1,0 +1,13 @@
+! version = 2.0
+
++ [*] horari(o|os)[ de][ aul(a|as)][ d(o|os)][ curs(o|os)][ ensino] superio(r|res) {weight=100}
+- https://www.divinopolis.cefetmg.br/alunos/horario-2/graduacao-2/
+
++ [*] horari(o|os)[ de][ aul(a|as)][ d(o|os)][ curs(o|os)][ ensino] tecnic(o|os) {weight=100}
+- https://www.divinopolis.cefetmg.br/alunos/horario-2/cursos-tecnicos/
+
++ [*] horari(o|os)[ de] aul(a|as) [*] {weight=1}
+- https://www.divinopolis.cefetmg.br/ere-informacoes-locais/
+
++ [*] horari(o|os)[ de] laboratori(o|os)
+- https://www.divinopolis.cefetmg.br/alunos/horario-2/laboratorios/

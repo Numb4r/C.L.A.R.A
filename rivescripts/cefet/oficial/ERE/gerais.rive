@@ -6,18 +6,6 @@
 - https://www.cefetmg.br/ensino-remoto-emergencial/ \n
 ^ https://www.cefetmg.br/ensino-remoto-emergencial/perguntas-e-respostas/
 
-+ [*] horari(o|os)[ de][ aul(a|as)][ d(o|os)][ curs(o|os)][ ensino] superio(r|res) {weight=100}
-- https://www.divinopolis.cefetmg.br/alunos/horario-2/graduacao-2/
-
-+ [*] horari(o|os)[ de][ aul(a|as)][ d(o|os)][ curs(o|os)][ ensino] tecnic(o|os) {weight=100}
-- https://www.divinopolis.cefetmg.br/alunos/horario-2/cursos-tecnicos/
-
-+ [*] horari(o|os)[ de] aul(a|as) [*] {weight=1}
-- https://www.divinopolis.cefetmg.br/ere-informacoes-locais/
-
-+ [*] horari(o|os)[ de] laboratori(o|os)
-- https://www.divinopolis.cefetmg.br/alunos/horario-2/laboratorios/
-
 + [*] contatos[ ere]
 - https://www.divinopolis.cefetmg.br/wp-content/uploads/sites/8/2020/03/Contatos-ERE.pdf
 
