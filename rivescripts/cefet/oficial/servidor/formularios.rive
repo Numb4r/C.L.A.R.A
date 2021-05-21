@@ -1,0 +1,41 @@
+! version = 2.0
+
++ [*] servidor [*] (formulari(o|os)|requeriment(o|os)) [*]
+-  Voce gostaria de qual tipo de formulario ? \n 
+^ 1.Diarias e Passagens \n
+^ 2.Solicitacao Servidores para Viagens e Eventos \n
+^ 3.Solicitação Veiculo Oficial\n 
+^ 4.Solicitação de Transporte (Setor de Transportes – BH) \n 
+^ 5.(Restaurante) Formulário de atendimento a visitante {topic=formsserv}
+
+> topic formsserv
+
++ #
+* <star> == 1 => http://www.dpg.cefetmg.br/diarias-e-passagens/ \n Deseja algo mais?
+* <star> == 2 => http://www.divinopolis.cefetmg.br/wp-content/uploads/sites/8/2019/05/Formul%C3%A1rio-Solicita%C3%A7%C3%A3o-Servidores-para-Viagens-e-Eventos1-compressed.pdf \n Deseja algo mais?
+* <star> == 3 => http://www.divinopolis.cefetmg.br/wp-content/uploads/sites/8/2019/05/Formul%C3%A1rio-Solicitacao-Veiculo-Oficial-compressed.pdf \n Deseja algo mais?
+* <star> == 4 => http://www.prefeitura.cefetmg.br/transportes/ \n Deseja algo mais?
+* <star> == 5 => http://www.spe.cefetmg.br/formulario-visitantes/ \n Deseja algo mais?
+- Nao consegui encontrar o formulario. Deseja algo mais? 
+
++ (sim|s)
+- Qual outro formulario deseja?
+
++ (sim|s) *
+- {@ <star2>}
+
++ (nao|n|so isso[*])
+- Ok, vamos para outro assunto {topic=random}
+
++ *
+- Desculpe, preciso que me diga o numero do formulario que deseja. 
+- Nao entendi, pode me dizer o numero do formulario ?
+
+
+< topic
+
+
+
+
+// + [*] (formulari(o|os)|requeriment(o|os)) [*] servidor [*]
+// * {@ servidor formularios}
