@@ -1,0 +1,65 @@
+! version = 2.0
+
+// Professores
++ [*] professo(r|res) [*]
+- o que deseja saber sobre os professores? {topic=professores}
+
++ [*] professo(r|res) * {weight=100}
+- {topic=professores} {@<star2>}
+
+
+> topic professores
++ [*] (trabalham|aula|lecionam) [*]
+- E possivel conferir o corpo docente efetivos no link :
+^ https://www.divinopolis.cefetmg.br/institucional-4/corpo-docente/ \n
+^ Deseja saber algo a mais?
+
++ (sim|s)
+- Otimo,o que deseja saber?
+
++ (sim|s) *
+@ <star2>
+
++ (nao|n|apenas isso|so isso|nada) [*]
+- Ok, vamos falar de outra coisa :D. {topic=random}
+
++ *
+- Nao entendi muito bem, pode reformular a pergunta?
+- Nao sei nada sobre isso... na verdade nao entendi a pergunta. 
+^ Quer continuar com as perguntas sobre os professores?
+
+
+< topic
+
+
+// Tecnicos adminitstrativos
++ [*] tecnic(o|os) administrativ(o|os) [*]
+- O que deseja saber sobre os tecnicos administrativos?{topic=tecadmin}
+
++ [*] tecnic(o|os) administrativ(o|os) * {weight=100}
+- {topic=tecadmin} {@ <star3>}
+
+
+
+> topic tecadmin
+
++ [*] trabalham [*]
+- E possivel conferir quais os tecnicos administrativos no link :
+^ https://www.divinopolis.cefetmg.br/institucional-4/tecnicos-administrativos/
+^ Deseja saber algo a mais?
+
+
++ (sim|s)
+- Otimo,o que deseja saber?
+
++ (sim|s) *
+@ <star2>
+
++ (nao|n|apenas isso|so isso|nada) [*]
+- Ok, vamos falar de outra coisa :D. {topic=random}
+
++ *
+- Nao entendi muito bem, pode reformular a pergunta?
+- Nao sei nada sobre isso... na verdade nao entendi a pergunta. 
+^ Quer continuar com as perguntas sobre os tecnicos administrativos?
+< topic
