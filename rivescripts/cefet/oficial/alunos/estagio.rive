@@ -1,0 +1,42 @@
+! version = 2.0
+
+
+//TODO : Transferir todas as variaveis para um arquivo so para melhor controle
+! var coordgeralestagio = Pedro Henrique Dias de Sousa
+! var subcoordgeralestagio = Gilberto da Silva Chaves
+! var setorestagio = Flaviane Moreira Silva Mendes
+
++ [*] estagio [*]
+- O que deseja saber sobre a parte de estagio? {topic=estagio}
+
+> topic estagio
++ [*] sobre [*]
+- O estagio e uma atividade curricular com a finalidade de aprendizagem profissional.
+^ O estagio e feito  com um orientador,um professor do CEFET, e supervisionado por um profissional da parte concedente,
+^ entao voce nao ficara desamparado ;).\n
+^ A carga horaria do estagio depende de cada curso, entao e bom verificar a estrutura curricular no sistema academico. \n 
+^ Se precisar mais de alguma informacao, entre no portal de estagio do CEFET : https://www.estagio.cefetmg.br \n
+^ Deseja saber mais alguma coisa sobre o programa de estagio?
+
++ [*] ([quem ][*]responsav(el|eis)|trabalha|)
+- O Coordenador Geral e  <bot coordgeralestagio>, o subcoordenador e <bot subcoordgeralestagio>.
+^ O responsavel pelo setor de estagio em Divinopolis e <bot setorestagio>, um amor de pessoa :).\n 
+^ Deseja saber mais alguma coisa sobre o estagio?
+
+
+
++ (sim|s)
+- Otimo,o que deseja saber?
+
++ (sim|s) * {weight=100}
+@ <star2>
+
++ (nao|n|apenas isso|so isso|nada) [*]
+- Ok, vamos falar de outra coisa :D. {topic=random}
+
++ *
+- Nao entendi a pergunta, poderia reformular?
+- Isso e uma pergunta? Porque eu nao entendi. Poderia repetir por favor.
+
+
+< topic
