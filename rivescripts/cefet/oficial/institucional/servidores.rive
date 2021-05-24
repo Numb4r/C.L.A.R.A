@@ -1,5 +1,98 @@
 ! version = 2.0
 
+//TODO : Transformar isso em uma chamada para para um db mongo
+> object professoresarea javascript
+      const professores =[
+        ["ADRIANO NOGUEIRA DRUMOND LOPES","Engenharia Mecatrônica"],
+        ["ALAN MENDES MAROTTA","Engenharia Mecatrônica"],
+        ["ALBA VALÉRIA APARECIDA DURÃES","Formação Geral"],
+        ["ALBERTO PENA LARA","Informática, Gestão e Design"],
+        ["ALISSON MARQUES DA SILVA","Informática, Gestão e Design"],
+        ["ANDRÉ LUÍS COSTA PINTO DE CARVALHO","Formação Geral"],
+        ["ANDRÉ LUIZ MARAVILHA SILVA","Informática, Gestão e Design"],
+        ["ANDRÉ LUIZ PAGANOTTI","Engenharia Mecatrônica"],
+        ["ANDREA MARA SILVEIRA CRUZ MARCELINO","Formação Geral"],
+        ["ANTÔNIO GUIMARÃES CAMPOS","Informática, Gestão e Design"],
+        ["BRUNO FERREIRA ROSA","Formação Geral"],
+        ["CHRISTIAN GONÇALVES HERRERA","Engenharia Mecatrônica"],
+        ["CLÁUDIO HENRIQUE GOMES DOS SANTOS","Engenharia Mecatrônica"],
+        ["CLÁUDIO PARREIRA LOPES","Engenharia Mecatrônica"],
+        ["DALSON ELOY ALMEIDA","Formação Geral"],
+        ["DANIEL ALVES COSTA","Engenharia Mecatrônica"],
+        ["DANIEL MORAIS DOS REIS","Informática, Gestão e Design"],
+        ["DÊNIS GERALDO FORTUNATO FRAGA","Informática, Gestão e Design"],
+        ["DIÊGO FERNANDES DA CRUZ","Engenharia Mecatrônica"],
+        ["EDILSON HÉLIO SANTANA","Informática, Gestão e Design"],
+        ["EDUARDO HABIB BECHELANE MAIA","Informática, Gestão e Design"],
+        ["EMERSON DE SOUSA COSTA","Formação Geral"],
+        ["EVANDRO FOCKINK DA SILVA","Engenharia Mecatrônica"],
+        ["FABIO LACERDA RESENDE E SILVA","Formação Geral"],
+        ["FERNANDA GODINHO DE SOUZA AGUIAR","Formação Geral"],
+        ["FERNANDO ANTÔNIO PEREIRA LEMOS","Formação Geral"],
+        ["FLÁVIO RAIMUNDO GIAROLA","Formação Geral"],
+        ["GUILHERME BARBOSA DE ALMEIDA","Formação Geral"],
+        ["HEMILLY BRUGNARA LARA","Informática, Gestão e Design"],
+        ["IZA FONTE BOA E SILVA","Formação Geral"],
+        ["JEAN CARLOS PEREIRA","Engenharia Mecatrônica"],
+        ["JOANICE MARIA BARRETO","Informática, Gestão e Design"],
+        ["JOÃO CARLOS DE OLIVEIRA","Engenharia Mecatrônica"],
+        ["JOSÉ GERALDO PEDROSA","Formação Geral"],
+        ["JULIANO DE BARROS VELOSO E LIMA","Engenharia Mecatrônica"],
+        ["LEONARDO GOMES MARTINS COELHO","Formação Geral"],
+        ["LUCAS SILVA DE OLIVEIRA","Engenharia Mecatrônica"],
+        ["LUCÍLIA LEMOS DE ANDRADE","Informática, Gestão e Design"],
+        ["LÚCIO FLÁVIO SANTOS PATRÍCIO","Engenharia Mecatrônica"],
+        ["LUIS FILIPE PEREIRA SILVA","Engenharia Mecatrônica"],
+        ["LUIZ CARLOS GONÇALVES","Formação Geral"],
+        ["LUIZ CLÁUDIO OLIVEIRA","Engenharia Mecatrônica"],
+        ["MARCELO CARAMURU PIMENTEL FRAGA","Informática, Gestão e Design"],
+        ["MARCIO ALVES DE AGUIAR","Engenharia Mecatrônica"],
+        ["MARIA DE LOURDES COUTO NOGUEIRA","Informática, Gestão e Design"],
+        ["MARIA DOS ANJOS BEIRIGO CUNHA","Informática, Gestão e Design"],
+        ["MARIA ISABEL RIOS DE CARVALHO VIANA","Formação Geral"],
+        ["MARLON ANTÔNIO PINHEIRO","Engenharia Mecatrônica"],
+        ["MARLON HENRIQUE TEIXEIRA","Engenharia Mecatrônica"],
+        ["MICHEL PIRES DA SILVA","Informática, Gestão e Design"],
+        ["MIGUEL FERNANDO DE OLIVEIRA GUERRA","Formação Geral"],
+        ["NÁDIA CRISTINA DA SILVA MELLO","Formação Geral"],
+        ["NATÁLIA MARILOLI SANTOS GIAROLA CASTRO","Formação Geral"],
+        ["NESTOR DIAS DE OLIVEIRA VOLPINI","Informática, Gestão e Design"],
+        ["RAFAEL MARCELINO DO CARMO SILVA","Formação Geral"],
+        ["RALNEY NOGUEIRA DE FARIA","Engenharia Mecatrônica"],
+        ["RAULIVAN RODRIGO DA SILVA","Informática, Gestão e Design"],
+        ["RENATO DE SOUSA DÂMASO","Engenharia Mecatrônica"],
+        ["RODRIGO ALVES DOS SANTOS","Formação Geral"],
+        ["RODRIGO BESSA","Informática, Gestão e Design"],
+        ["RODRIGO REGIS CAMPOS SILVA","Formação Geral"],
+        ["THIAGO MAGELA RODRIGUES DIAS","Informática, Gestão e Design"],
+        ["TIAGO ALVES DE OLIVEIRA","Informática, Gestão e Design"],
+        ["VALTER JUNIOR DE SOUZA LEITE","Engenharia Mecatrônica"],
+        ["WAGNER CUSTÓDIO DE OLIVEIRA","Engenharia Mecatrônica"],
+        ["WANDERSON LOPES LAMOUNIER","Formação Geral"]]
+        
+        var type = arguments[1]
+        const typesearch={
+            'meca':"Engenharia Mecatrônica",
+            'info':"Informática, Gestão e Design",
+            'moda':"Informática, Gestão e Design",
+            'geral':"Formação Geral"
+        }
+        var arrprof = ""    
+        if(type=="all"){
+            professores.forEach(element =>{
+                arrprof+= element[0]+" - "+element[1]+"\n"
+            })
+        }else{
+            type = typesearch[type]
+            professores.forEach(element => {
+                if(element[1]==type){
+                    arrprof+= element[0]+ "\n"
+                }
+            });
+        }
+        return arrprof
+< object
+
 // Professores
 + [*] professo(r|res) [*]
 - o que deseja saber sobre os professores? {topic=professores}
@@ -9,10 +102,17 @@
 
 
 > topic professores
-+ [*] (trabalham|aula|lecionam) [*]
-- E possivel conferir o corpo docente efetivos no link :
-^ https://www.divinopolis.cefetmg.br/institucional-4/corpo-docente/ \n
-^ Deseja saber algo a mais?
+// + [*] (trabalham|aula|lecionam|[corpo ]docente) [*]
+// - E possivel conferir o corpo docente efetivos no link :
+// ^ https://www.divinopolis.cefetmg.br/institucional-4/corpo-docente/ \n
+// ^ Deseja saber algo a mais?
+
++ [*] (trabalham|aula|lecionam|[corpo ]docente) [*]
+- De qual area sao esses professores?
+^ 1. Engenharia Mecatrônica
+^ 2. Formacao Geral
+^ 3. Informática Gestão e Design
+^ 4. Todos  {topic=searchprof}
 
 + (sim|s)
 - Otimo,o que deseja saber?
@@ -30,6 +130,43 @@
 
 
 < topic
+// Search professor ================================================================
+> topic searchprof
+    + _
+    - Eu preciso saber de qual area o professor e de acordo com as opcoes que eu te passei.
+    - Nao consigo entender muito bem, meus criadores acharam muito difi... quer dizer, eu so preciso
+    ^ do numero para entender. Comunicacao mais facil,entende? :)
+
+    + #
+    * <star> == 1 => <call>professoresarea meca</call>
+    ^ Deseja continuar falando sobre professores ? 
+    * <star> == 2 => <call>professoresarea geral</call>
+    ^ Deseja continuar falando sobre professores ? 
+    * <star> == 3 => <call>professoresarea info </call>
+    ^ Deseja continuar falando sobre professores ? 
+    * <star> == 4 => <call> professoresarea all </call>
+    ^ Deseja continuar falando sobre professores ? 
+    - Eh,parece que voce errou o numero ein.
+
+    + (sim|s)
+    - Otimo,o que deseja saber? {topic=professores}
+    + (sim|s) *
+    - {topic=professores} {@<star2>}
+    + (nao|n)
+    - Otimo,vamos falar de outra coisa {topic=random}
+
+
+    + *
+    - Nao entendi
+    + (esqueca|mudar de assunto|mudar *)
+    - Ok,vamos conversar de outra coisa {topic=random}
+    + voltar
+    - Ok,vamos continuar falando sobre professores {topic=professores}
+< topic
+
+//-----------------------------------------------------------------------------------------
+
+
 
 
 // Tecnicos adminitstrativos
