@@ -17,7 +17,7 @@
 + (sim|s)
 - Otimo,o que deseja saber?
 
-+ (sim|s) *
++ (sim|s) * {weight=100}
 @ <star2>
 
 + (nao|n|apenas isso|so isso|nada) [*]
