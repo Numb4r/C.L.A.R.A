@@ -9,6 +9,8 @@
   "author": "Numb4r",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.21.1",
+    "cheerio": "^1.0.0-rc.9",
     "discord.app": "^0.0.1-security",
     "rivescript": "^2.1.0"
   }
