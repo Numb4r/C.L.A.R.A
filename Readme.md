@@ -22,3 +22,20 @@ Dentro do arquivo ``config.json``, a estrutura deve ficar da seguinte forma
 }
 ```
 Apos isso,execute ``node discord.js`` e o chatbot estara disponivel para conversa.
+
+# Roadmap 
+- [ ] Cumprir as principais exigencias do chatbot  
+  
+  - [ ] Monitoria atual 
+  - [X] Professores atuais
+  - [ ] Email dos professores e da administração 
+  - [ ] Calendario letivo 
+  - [ ] Grade curricular dos cursos 
+  - [ ] Noticias 
+  - [ ] Estagios 
+  - [ ] Documentos 
+  - [ ] Reclamaçoes e sugestões 
+- [ ] Criar uma interface com algum meio
+- [ ] Conectividade com um banco de dados para armazenar sugestoes
+- [ ] Ampliar a personalidade da Clara
+- [ ] Correcao gramatical
