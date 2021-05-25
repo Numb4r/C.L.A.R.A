@@ -1,0 +1,29 @@
+! version = 2.0
+> object noticias javascript
+const axios = require('axios');
+const cheerio = require('cheerio');
+const link  = 'https://www.cefetmg.br/noticias/'
+const getNews = async ()=>{
+  try {
+		const { data } = await axios.get(
+			link
+		);
+		const $ = cheerio.load(data);
+    let news = ""
+    $("div.blog_lista > h3.titulo_lista > a").map((i,elem)=>{
+      news  += "* "+$(elem).text()+"\n -> "+ $(elem).attr("href")+"\n"
+    })
+    // console.log(news)
+    return news
+	} catch (error) {
+		throw error;
+	} 
+}
+getNews().then((news)=>{
+  console.log(news)
+})
+< object
+
++ noticias
+- Aqui estao as ultimas noticias:  
+^ <call>noticias</call>
