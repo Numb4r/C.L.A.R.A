@@ -3,7 +3,6 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
 const link  = 'https://www.cefetmg.br/noticias/'
-const getNews = async ()=>{
   try {
 		const { data } = await axios.get(
 			link
@@ -13,15 +12,10 @@ const getNews = async ()=>{
     $("div.blog_lista > h3.titulo_lista > a").map((i,elem)=>{
       news  += "* "+$(elem).text()+"\n -> "+ $(elem).attr("href")+"\n"
     })
-    // console.log(news)
     return news
 	} catch (error) {
-		throw error;
+    return "Nao consegui encontrar as noticias nesse momento. Mais tarde talvez?"
 	} 
-}
-getNews().then((news)=>{
-  console.log(news)
-})
 < object
 
 + noticias
