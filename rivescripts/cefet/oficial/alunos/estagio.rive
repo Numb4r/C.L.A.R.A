@@ -6,13 +6,13 @@
 ! var subcoordgeralestagio = Gilberto da Silva Chaves
 ! var setorestagio = Flaviane Moreira Silva Mendes
 
-+ [*] estagio [*]
++ [*] estagi(o|os) [*]
 - O que deseja saber sobre a parte de estagio? {topic=estagio}
 
-+ * estagio [*] {weight=100}
++ * estagi(o|os) [*] {weight=100}
 - {topic=estagio} {@ <star>}
-+ [*] estagio * {weight=100}
-- {topic=estagio} {@ <star>}
++ [*] estagi(o|os) * {weight=100}
+- {topic=estagio} {@ <star2>}
 
 > topic estagio
 + [*] sobre [*]
@@ -23,7 +23,10 @@
 ^ Se precisar mais de alguma informacao, entre no portal de estagio do CEFET : https://www.estagio.cefetmg.br \n
 ^ Deseja saber mais alguma coisa sobre o programa de estagio?
 
-+ [*] ([quem ][*]responsav(el|eis)|trabalha) [*]
++ [*] funcion(a|am) [*]
+@ sobre
+
++ [*] ([quem ][*]responsav(el|eis)|trabalh(a|am)) [*]
 - O Coordenador Geral e  <bot coordgeralestagio>, o subcoordenador e <bot subcoordgeralestagio>.
 ^ O responsavel pelo setor de estagio em Divinopolis e <bot setorestagio>, um amor de pessoa :).\n 
 ^ Deseja saber mais alguma coisa sobre o estagio?
