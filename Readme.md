@@ -28,13 +28,12 @@ Apos isso,execute ``node discord.js`` e o chatbot estara disponivel para convers
   
   - [ ] Monitoria atual 
   - [X] Professores atuais
-  - [ ] Email dos professores e da administração 
-  - [ ] Calendario letivo 
+  - [X] Email dos professores e da administração 
+  - [X] Calendario letivo 
   - [ ] Grade curricular dos cursos 
-  - [ ] Noticias 
+  - [X] Noticias 
   - [ ] Estagios 
   - [ ] Documentos 
-  - [ ] Reclamaçoes e sugestões 
 - [ ] Criar uma interface com algum meio
 - [ ] Conectividade com um banco de dados para armazenar sugestoes
 - [ ] Ampliar a personalidade da Clara
