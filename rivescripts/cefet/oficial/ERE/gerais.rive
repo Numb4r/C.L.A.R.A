@@ -1,11 +1,10 @@
 ! version = 2.0
 
-//TODO Transformar os links ein variaveis
-
-+ onde[ posso] encontr(o|ar)[ mais] informacoes[ sobre][ o] ere
-- https://www.cefetmg.br/ensino-remoto-emergencial/ \n
++ [*] ere [*]
+- Voce pode encontrar todas as informacoes sobre o ensino remoto emergencial no site oficial do CEFET-MG:
+^ https://www.cefetmg.br/ensino-remoto-emergencial/ 
 ^ https://www.cefetmg.br/ensino-remoto-emergencial/perguntas-e-respostas/
 
-+ [*] contatos[ ere]
++ [*] contatos [*] ere {weight=100}
 - https://www.divinopolis.cefetmg.br/wp-content/uploads/sites/8/2020/03/Contatos-ERE.pdf
 
