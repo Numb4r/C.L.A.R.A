@@ -32,7 +32,7 @@ Apos isso,execute ``node discord.js`` e o chatbot estara disponivel para convers
   - [X] Calendario letivo 
   - [ ] Grade curricular dos cursos 
   - [X] Noticias 
-  - [ ] Estagios 
+  - [X] Estagios 
   - [ ] Documentos 
 - [ ] Criar uma interface com algum meio
 - [ ] Conectividade com um banco de dados para armazenar sugestoes
