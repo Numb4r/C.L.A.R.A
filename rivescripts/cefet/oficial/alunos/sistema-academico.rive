@@ -1,0 +1,8 @@
+! version = 2.0
++ [*] (portal|sistema) academico [*]
+- https://sig.cefetmg.br/sigaa/
+
+
++ [*][minhas ]not(a|as) [*]
+- Bem... eu sei das minhas notas hehe. Nao consigo ver as suas, tente verificar dentro do 
+^ sistema academico. https://sig.cefetmg.br/sigaa/
