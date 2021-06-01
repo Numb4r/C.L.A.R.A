@@ -3,8 +3,8 @@
 // ^Araxá | Divinópolis|Belo Horizonte|Timóteo|
 // ^Varginha|Nepomuceno|Curvelo|Contagem|
 > object campus javascript
-    var roman = ["I","II","III","IV","V","VI","VII","VIII","IX","X","XI"]
-    var campusN = [
+   const roman = ["I","II","III","IV","V","VI","VII","VIII","IX","X","XI"]
+    const campusN = [
     "Belo Horizonte",
     "Belo Horizonte",
     "Leopoldina",
@@ -16,23 +16,39 @@
     "Nepomuceno",
     "Curvelo",
     "Contagem"]
-
+    //TODO: refatorar esse clusterfuck 
     var str = arguments[1]
-    //Arrumar entrada com numeros
+    
+       
     if (!isNaN(parseInt(str))){
         str = str - 1
-        return campusN[roman[str]]
+        return campusN[str]
     }else{
         str = str.toString().toUpperCase()
         var index = roman.indexOf(str)
-        if(index == -1)
-            return "Esse campus nao existe"
-         return "Campus "+campusN[index];   
+        if(index == -1){
+            var campusL = []
+            campusN.forEach((v,index)=>{
+                if(v.toUpperCase().indexOf(str) > -1)campusL.push(roman[index])
+                console.log(v + " "+ str)
+            })
+            if(campusL.length != 0){
+                var strR = ""
+                campusL.forEach((v,index)=>{
+                    strR+= v+(index != campusL.length-1 ? "," : "")
+                })
+                return strR
+            }
+            
+            return "Esse campus nao existe."
+
+        }
+        return "Campus "+campusN[index];   
     }
     
 < object
 
-+ campus *
++ [*] campus * [*]
 - <call>campus <star></call>
 
 // - <call>campus <star></call>
