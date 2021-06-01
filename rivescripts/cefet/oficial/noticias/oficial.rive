@@ -18,6 +18,6 @@ const link  = 'https://www.cefetmg.br/noticias/'
 	} 
 < object
 
-+ noticias
-- Aqui estao as ultimas noticias:  
++ [*] noticias [*]
+- Aqui estao as ultimas noticias:  \n
 ^ <call>noticias</call>
