@@ -1,10 +1,38 @@
 ! version = 2.0
+! array ere = ere|ensino remoto|ensino remoto emergencial
+! array ed = ed|educacao a distancia|educacao distancia
+// + [*] @ere [*]
+// - Voce pode encontrar todas as informacoes sobre o ensino remoto emergencial no site oficial do CEFET-MG:
+// ^ https://www.cefetmg.br/ensino-remoto-emergencial/ 
+// ^ https://www.cefetmg.br/ensino-remoto-emergencial/perguntas-e-respostas/
 
-+ [*] ere [*]
-- Voce pode encontrar todas as informacoes sobre o ensino remoto emergencial no site oficial do CEFET-MG:
-^ https://www.cefetmg.br/ensino-remoto-emergencial/ 
-^ https://www.cefetmg.br/ensino-remoto-emergencial/perguntas-e-respostas/
-
-+ [*] contatos [*] ere {weight=100}
++ [*] contatos [*] @ere [*] {weight=100}
 - https://www.divinopolis.cefetmg.br/wp-content/uploads/sites/8/2020/03/Contatos-ERE.pdf
 
++ [*] (@ere|pandemia) [*]
+- O CEFET-MG instituiu no dia 12 de março de 2020 um Comitê Gestor de Crise, com a finalidade de elaborar plano de contingência e orientar sobre ações necessárias para o enfrentamento da emergência de saúde pública. 
+^ Os servidores estão trabalhando remotamente e as aulas estão acontecendo também de maneira remota. Ainda não temos a previsão para um retorno presencial das atividades.
+^ Mais informações podem ser obtidas em:\n 
+^ https://www.cefetmg.br/coronavirus/medidas-institucionais/ 
+^ https://www.cefetmg.br/ensino-remoto-emergencial/
+^ e 
+^ https://www.cefetmg.br/ensino-remoto-emergencial/perguntas-e-respostas/
+
++ [*] funciona(mento|ndo) [*] @ere [*] {weight=100}
+@ pandemia
+
++ [*] aul(a|as) [*] (presenci(al|ais)|pandemia|@ere) [*] {weight=100}
+@ pandemia
+
++ [*] cefet [*] funcionando [*]
+@ pandemia
+
+
+
++ [*] (@ere|@ed) (x|vs|versus) (@ere|@ed) [*]
+- Mais autonomia para o professor e maior contato com os estudantes são vantagens do Ensino Remoto Emergencial em relação a Educação a Distância.
+^ Mais informações podem ser obtidas em:
+^ https://www.cefetmg.br/noticias/professores-comentam-a-diferenca-entre-o-ensino-remoto-emergencial-e-ead/ 
+
++ [*] diferenca [*] * [*] *
+@ <star> vs <star2>
