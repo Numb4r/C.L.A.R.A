@@ -1,0 +1,9 @@
+! version = 2.0
+! var calendario = https://www.divinopolis.cefetmg.br/alunos/calendario/
+
++ [*] calendari(o|os) [*]
+- E possivel conferir os calendarios no link <bot calendario>
+
++ [*] ferias [*]
+- As férias escolares estão previstas nos calendários escolares dos cursos: técnicos e de graduação. Os calendários escolares referentes aos cursos do campus Divinópolis podem ser consultados em:
+^ <bot calendario>
