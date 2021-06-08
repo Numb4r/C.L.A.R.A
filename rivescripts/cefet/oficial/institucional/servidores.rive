@@ -2,6 +2,8 @@
 
 //TODO : Transformar isso em uma chamada para para um db mongo
 > object professoresarea javascript
+// Posteriormente substituir essa funcao por uma com conexao a uma API que 
+// Retorna a lista de professores
  const professores = [
             ["Alberto Pena Lara","Informática"," alberto@cefetmg.br"],
             ["Alisson Marques da Silva","Informática"," alisson@cefetmg.br"],
@@ -195,3 +197,12 @@
 - Nao sei nada sobre isso... na verdade nao entendi a pergunta. 
 ^ Quer continuar com as perguntas sobre os tecnicos administrativos?
 < topic
+
++ (quais|qual|quem) [*] coordenado(r|res) [*] curs(o|os) [*]
+- E possivel conferir essa informacao no link : https://www.divinopolis.cefetmg.br/institucional-4/estrutura-organizacional/ 
+
++ [*] (informac(oes|ao)|sobre) [*] setores [*]
+- E possivel conferir essa informacao no link : https://www.divinopolis.cefetmg.br/institucional-4/estrutura-organizacional/ 
+^ e https://www.divinopolis.cefetmg.br/quadro-de-contatos/ 
+
+
