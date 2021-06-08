@@ -1,15 +1,23 @@
 ! version = 2.0
-
+! var horariotecnico    = https://www.divinopolis.cefetmg.br/alunos/horario-2/cursos-tecnicos/
+! var horariograduacao  = https://www.divinopolis.cefetmg.br/alunos/horario-2/graduacao-2/ 
+! var horariolabs       = https://www.divinopolis.cefetmg.br/alunos/horario-2/laboratorios/
++ [*] horari(o|os) [*]
+- Voce deve estar procurando os horario das aulas certo?
+^ Voce pode conferir por aqui 
+^ {@ horarios aulas}
+^ Os horarios de laboratorios voce encontra aqui:
+^ {@ horarios laboratorios}
++ [*] horari(o|os) [*] aul(a|as) [*] {weight=90}
+- <bot horariotecnico>
+^ e
+^ <bot horariograduacao>
 
 + [*] horari(o|os) [*] (superio(r|res)|graduacao) [*] {weight=100}
-- https://www.divinopolis.cefetmg.br/alunos/horario-2/graduacao-2/
-
+- <bot horariograduacao>
 
 + [*] horari(o|os) [*] (tecnic(o|os)|medio|segundo grau) [*] {weight=100}
-- https://www.divinopolis.cefetmg.br/alunos/horario-2/cursos-tecnicos/
-
-+ [*] horari(o|os) [*] {weight=1}
-- https://www.divinopolis.cefetmg.br/ere-informacoes-locais/
+- <bot horariotecnico>
 
 + [*] horari(o|os) [*] (laboratori(o|os)) {weight=100}
-- https://www.divinopolis.cefetmg.br/alunos/horario-2/laboratorios/
+- <bot horariolabs>
