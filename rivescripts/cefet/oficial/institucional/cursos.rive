@@ -1,0 +1,15 @@
+! version = 2.0
+
++ [*] quais [*] cursos [*]
+- O CEFET-MG Campus Divinópolis possui:
+^ -> Cursos técnicos integrados de nível médio em: Informática, Mecatrônica e Produção de Moda. 
+^ -> Cursos técnicos: subsequentes e concomitantes (Noturnos): Eletromecânica e Informática para Internet.
+^ -> Cursos superiores: Design de Moda, Engenharia de Computação e Engenharia Mecatrônica
+^ -> Curso de Pós-graduação Lato Sensu em Sistemas e Dispositivos Mecatrônicos
+^ -> Curso de Pós-graduação Stricto Sensu: Mestrado Profissional em Educação Profissional e Tecnológica – PROFEPT
+^ Informações específicas sobre os cursos estão disponíveis no menu Cursos em:
+^ https://www.divinopolis.cefetmg.br/ 
+
+ 
++ [*] cursos [*] 
+@ quais cursos
