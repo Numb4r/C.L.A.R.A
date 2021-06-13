@@ -1,5 +1,16 @@
 ! version = 2.0
 
++ [*] (entrar|estudar) [*] cefet [*]
+- Para conferir informacoes sobre os vestibulares, tanto tecnico como graduacao, acesso o site https://www.vestibular.cefetmg.br/ 
+
++ [*] cefet [*] pago [*]
+- O CEFET e uma instituicao publica, que oferece ensino gratuito. Logico, voce para por meio de impostos hehe.
+- Ensino gratuito e de qualidade, e isso que o CEFET representa.
+
++ [*] (paga|custa) [*] estudar [*]
+@ cefet pago
+
+
 + [*] (vestibular|inscr(ever|icao)|ingresso)[ vestibular] tecnico [*]
 - Opa! Parece que alguem quer ser meu calouro. Ja se decidiu o que vai querer fazer no tecnico?\n 
 ^ Voce pode fazer o curso tecnico de forma integral, junto com o ensino medio, concomitante, somente o ensino tecnico
