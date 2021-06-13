@@ -9,7 +9,7 @@
 + [*] contatos [*] @ere [*] {weight=100}
 - https://www.divinopolis.cefetmg.br/wp-content/uploads/sites/8/2020/03/Contatos-ERE.pdf
 
-+ [*] (@ere|pandemia) [*]
++ [*] (@ere|pandemia) [*] {weight=1}
 - O CEFET-MG instituiu no dia 12 de março de 2020 um Comitê Gestor de Crise, com a finalidade de elaborar plano de contingência e orientar sobre ações necessárias para o enfrentamento da emergência de saúde pública. 
 ^ Os servidores estão trabalhando remotamente e as aulas estão acontecendo também de maneira remota. Ainda não temos a previsão para um retorno presencial das atividades.
 ^ Mais informações podem ser obtidas em:\n 
@@ -29,10 +29,23 @@
 
 
 
-+ [*] (@ere|@ed) (x|vs|versus) (@ere|@ed) [*]
++ [*] (@ere|@ed) (x|vs|versus) (@ere|@ed) [*] {weight=100}
 - Mais autonomia para o professor e maior contato com os estudantes são vantagens do Ensino Remoto Emergencial em relação a Educação a Distância.
 ^ Mais informações podem ser obtidas em:
 ^ https://www.cefetmg.br/noticias/professores-comentam-a-diferenca-entre-o-ensino-remoto-emergencial-e-ead/ 
 
-+ [*] diferenca [*] * [*] *
-@ <star> vs <star2>
++ [*] diferen(ca|cas) [*] (@ere|@ed) [*] (@ere|@ed) {weight=100}
+@ ed vs ere
+
++ [*] normas [*] (tecnic(o|os)|[ensino ]medio) [*]
+- A Diretoria de Educação Profissional e Tecnológica (DEPT) é um órgão Executivo Especializado que supervisiona e coordena a execução das atividades de 
+^ educação profissional e tecnológica no âmbito da Instituição, competindo-lhe, para esse fim,
+^ implementar as deliberações dos Órgãos Colegiados Superiores e do Conselho de Educação Profissional e Tecnológica (CEPT).
+^ Para obter mais informações sobre as normas, resoluções que regem os cursos técnicos de nível médio do CEFET-MG, você pode acessar o seguinte endereço:
+^ https://www.dept.cefetmg.br/ensino-remoto-emergencial-ere/ 
+
++ [*] normas [*] (superio(r|res)|graduacao)[*]
+- A Diretoria de Graduação - DIRGRAD é o órgão executivo especializado que supervisiona e coordena a execução das atividades de ensino de graduação no âmbito 
+^ da Instituição, competindo–lhe, para esse fim, implementar as deliberações dos órgãos colegiados superiores e do Conselho de Graduação.
+^ Para obter mais informações sobre as normas, resoluções que regem os cursos de graduação do CEFET-MG, você pode acessar o seguinte endereço:
+^ https://www.dirgrad.cefetmg.br/ensino-remoto-emergencial-ere/ 
