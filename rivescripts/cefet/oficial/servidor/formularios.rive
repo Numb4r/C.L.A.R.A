@@ -11,11 +11,16 @@
 > topic formsserv
 
 + #
-* <star> == 1 => http://www.dpg.cefetmg.br/diarias-e-passagens/ \n Deseja algo mais?
-* <star> == 2 => http://www.divinopolis.cefetmg.br/wp-content/uploads/sites/8/2019/05/Formul%C3%A1rio-Solicita%C3%A7%C3%A3o-Servidores-para-Viagens-e-Eventos1-compressed.pdf \n Deseja algo mais?
-* <star> == 3 => http://www.divinopolis.cefetmg.br/wp-content/uploads/sites/8/2019/05/Formul%C3%A1rio-Solicitacao-Veiculo-Oficial-compressed.pdf \n Deseja algo mais?
-* <star> == 4 => http://www.prefeitura.cefetmg.br/transportes/ \n Deseja algo mais?
-* <star> == 5 => http://www.spe.cefetmg.br/formulario-visitantes/ \n Deseja algo mais?
+* <star> == 1 => http://www.dpg.cefetmg.br/diarias-e-passagens/ \n 
+^ Deseja algo mais?
+* <star> == 2 => http://www.divinopolis.cefetmg.br/wp-content/uploads/sites/8/2019/05/Formul%C3%A1rio-Solicita%C3%A7%C3%A3o-Servidores-para-Viagens-e-Eventos1-compressed.pdf \n 
+^ Deseja algo mais?
+* <star> == 3 => http://www.divinopolis.cefetmg.br/wp-content/uploads/sites/8/2019/05/Formul%C3%A1rio-Solicitacao-Veiculo-Oficial-compressed.pdf \n 
+^ Deseja algo mais?
+* <star> == 4 => http://www.prefeitura.cefetmg.br/transportes/ \n 
+^ Deseja algo mais?
+* <star> == 5 => http://www.spe.cefetmg.br/formulario-visitantes/ \n 
+^ Deseja algo mais?
 - Nao consegui encontrar o formulario. Deseja algo mais? 
 
 + (sim|s)
@@ -24,7 +29,7 @@
 + (sim|s) *
 - {@ <star2>}
 
-+ (nao|n|so isso[*])
++ (nao|n|(so|apenas) isso[*])
 - Ok, vamos para outro assunto {topic=random}
 
 + *
