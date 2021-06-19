@@ -6,47 +6,48 @@
 ! var subcoordgeralestagio = Gilberto da Silva Chaves
 ! var setorestagio = Flaviane Moreira Silva Mendes
 
-+ [*] estagi(o|os) [*]
-- O que deseja saber sobre a parte de estagio? {topic=estagio}
++ [*] est(a|á)gi(o|os) [*]
+- O que deseja saber sobre a parte de estágio? {topic=estagio}
 
-+ * estagi(o|os) [*] {weight=100}
++ * est(a|á)gi(o|os) [*] {weight=100}
 - {topic=estagio} {@ <star>}
-+ [*] estagi(o|os) * {weight=100}
++ [*] est(a|á)gi(o|os) * {weight=100}
 - {topic=estagio} {@ <star2>}
 
 > topic estagio
 + [*] sobre [*]
-- O estagio e uma atividade curricular com a finalidade de aprendizagem profissional.
-^ O estagio e feito  com um orientador,um professor do CEFET, e supervisionado por um profissional da parte concedente,
-^ entao voce nao ficara desamparado ;).\n
-^ A carga horaria do estagio depende de cada curso, entao e bom verificar a estrutura curricular no sistema academico. \n 
-^ Se precisar mais de alguma informacao, entre no portal de estagio do CEFET : https://www.estagio.cefetmg.br \n
-^ Alem disso, o cefet conta com uma nova plataforma, que visa acompanhar melhor formandos e ex-alunos da instituicao.
-^ Aconselho ficar ligado nela, muitas oportuniades podem surgir la xD. https://cefetcarreiras.com.br/carreiras/
-^ Deseja saber mais alguma coisa sobre o programa de estagio?
+- O estágio e uma atividade curricular com a finalidade de aprendizagem profissional.
+^ O estágio é feito com um orientador, um professor do CEFET, além de ser supervisionado por um profissional da parte concedente,
+^ então você não ficará desamparado. :D\n
+^ A carga horaria do estágio depende de cada curso, então é bom verificar a estrutura curricular no sistema acadêmico. \n 
+^ Se precisar mais de alguma informação, entre no portal de estágio do CEFET : https://www.estagio.cefetmg.br \n
+^ Além disso, o Cefet conta com uma nova plataforma que visa acompanhar melhor os formandos e ex-alunos da instituição.
+^ Aconselho ficar ligado nela, muitas oportunidades podem surgir lá. xD https://cefetcarreiras.com.br/carreiras/
+^ Deseja saber mais alguma coisa sobre o programa de estágio?
 
-+ [*] funcion(a|am) [*]
+
++ [*] funcion(a|am|amento) [*]
 @ sobre
 
-+ [*] ([quem ][*]responsav(el|eis)|trabalh(a|am)) [*]
++ [*] ([quem ][*]respons(a|á)v(el|eis)|trabalh(a|am)) [*]
 - O Coordenador Geral e  <bot coordgeralestagio>, o subcoordenador e <bot subcoordgeralestagio>.
-^ O responsavel pelo setor de estagio em Divinopolis e <bot setorestagio>, um amor de pessoa :).\n 
-^ Deseja saber mais alguma coisa sobre o estagio?
+^ O responsável pelo setor de estágio em Divinopolis e <bot setorestagio>, um amor de pessoa. :)\n 
+^ Deseja saber mais alguma coisa sobre o estágio?
 
 
 
 + (sim|s)
-- Otimo,o que deseja saber?
+- Ótimo, o que deseja saber?
 
 + (sim|s) * {weight=100}
 @ <star2>
 
-+ (nao|n|apenas isso|so isso|nada) [*]
-- Ok, vamos falar de outra coisa :D. {topic=random}
++ (n(a|ã)o|n|apenas isso|s(o|ó) isso|nada) [*]
+- Ok, vamos falar de outra coisa. :P {topic=random}
 
 + *
-- Nao entendi a pergunta, poderia reformular?
-- Isso e uma pergunta? Porque eu nao entendi. Poderia repetir por favor.
+- Não entendi a pergunta, poderia reformular?
+- Isso e uma pergunta? Porque eu não entendi. Poderia repetir por favor.
 
 
 < topic

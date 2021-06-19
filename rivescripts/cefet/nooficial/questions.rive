@@ -1,32 +1,32 @@
 ! version = 2.0
 
 + [*] cefet [*] mais cursos
-- Infelizmente, o CEFET Divinopolis nao tem mais espaco.
+- Infelizmente, o CEFET Divinópolis não tem mais espaço.
 ^ Somos um campus pequeno por enquanto. Ouvi dizer que planejam construir 
-^ mais um predio para salas de aulas e laboratorios, alem de uma biblioteca nova.
-^ Bom... por enquanto temos um quiosque novinho, entao aproveite bem ele. Estou sempre 
-^ por la, entao me encontre qualquer dia desses ;).
+^ mais um prédio para salas de aulas e laboratórios, além de uma biblioteca nova.
+^ Bom... por enquanto temos um quiosque novinho, então aproveite bem ele. Estou sempre 
+^ por lá, então me encontre qualquer dia desses. ^-^
 
 + [*] estudos [*] cefet
-- O Cefet Divinopolis possui diferente tipos de ensino medio: \n 
-^ 1. Medio Integrado ao Ensino Tecnico: Os alunos cumprem o ensino medio regular junto com o ensino tecnico de sua escolha, ao mesmo tempo. \n 
-^ 2. Subsequente: O aluno deve ja ter concluido o ensino medio para essa modalidade. Nela, voce cursa apenas o ensino tecnico. \n 
-^ 3. Concomitante: Palavra estranha, ne? Nessa modalidade o estudante esta cursando o ensino medio em outra instituicao e apenas cursa o tecnico no cefet, no periodo da noite. E a noite, nao de madrugada, entendeu? hehe \n 
-^ Temos tambem cursos de graduacao, que o aluno precisa ter concluido o ensino medio e prestado o ENEM, e mestrado, que o aluno deve ja ter cursado alguma graduacao.
+- O Cefet Divinópolis possui diferente tipos de ensino médio: \n 
+^ 1. Médio Integrado ao Ensino Técnico: os alunos cumprem o ensino médio regular junto com o ensino técnico de sua escolha, ao mesmo tempo. \n 
+^ 2. Subsequente: O aluno deve ter concluído o ensino médio para essa modalidade. Nela, você cursa apenas o ensino técnico. \n 
+^ 3. Concomitante: Palavra estranha, né? Nessa modalidade o estudante está cursando o ensino médio em outra instituição e apenas cursa o técnico no Cefet, no período da noite. E a noite, não de madrugada, entendeu? hehe \n 
+^ Temos também cursos de graduação, que o aluno precisa ter concluído o ensino médio e prestado o ENEM. Por fim mestrado, que o aluno deve ja ter cursado alguma graduação.
 
 
-+ [*] funcion(a|am) [*] iniciacao[ cientifica][*]
-- Sugiro dar uma olhada no site https://www.dppg.cefetmg.br/iniciacao-cientifica-e-tecnologica/. La voce encontrara todas as informacoes sobre sobre iniciacao cientifica... ou quase todas hehe.
++ [*] funcion(a|am) [*] inicia(ca|çã)o [ cient(í|i)fica][*]
+- Sugiro dar uma olhada no site https://www.dppg.cefetmg.br/iniciacao-cientifica-e-tecnologica/ . Lá você encontrara todas as informações sobre iniciação científica... ou quase todas. :D
 
-+ [*] (papel|funcao) [*] (da|gremio[ estudantil])
-- Sugiro perguntar para eles, nao participo do movimento hehe.
++ [*] (papel|fun(ca|çã)o) [*] (da|gremio[estudantil])
+- Sugiro perguntar para eles, nao participo do movimento. :D
 - Nao sei ao certo, preciso perguntar para alguem de dentro do <star2>
 // BUG: Nao reconhece /
-+ [*] parcerias ([*]privadas|publico[*]privadas) [*]
++ [*] parcerias ([*]privadas|p(u|ú)blico[*]privadas) [*]
 - O Cefet Divinopolis tem conversado com alguns representantes de empresas, mas sem muito sucesso.
 
-+ [*] trabalhar [*] (cefet|instituicao)
-- Bem... nao sei se percebeu mas eu sou uma aluna, hehe. Quem me dera receber pra vir pro Cefet xD.\n 
-^ Eu ja fiz essa mesma pergunta para alguns professores. Sempre dizem que e otimo trabalhar aqui, um lugar muito bonito 
-^ com pessoas otimas de se conviver. Entao acho que e realmente bom trabalhar aqui :).
++ [*] trabalhar [*] (cefet|institui(ca|çã)o)
+- Bem... não sei se percebeu mas eu sou uma aluna, hehe. Quem me dera receber pra vir pro Cefet xD.\n 
+^ Eu já fiz essa mesma pergunta para alguns professores. Sempre dizem que é ótimo trabalhar aqui, um lugar muito bonito 
+^ com pessoas ótimas de se conviver. Então acho que é realmente bom trabalhar aqui. :)
 

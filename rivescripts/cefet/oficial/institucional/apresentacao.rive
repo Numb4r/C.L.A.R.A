@@ -40,7 +40,7 @@
                 return strR
             }
             
-            return "Esse campus nao existe."
+            return "Esse campus não existe."
 
         }
         return "Campus "+campusN[index];   

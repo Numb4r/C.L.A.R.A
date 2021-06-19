@@ -102,7 +102,7 @@
 // ^ Deseja saber algo a mais?
 
 + [*] (trabalham|aula|lecionam|[corpo ]docente) [*]
-- De qual area sao esses professores?
+- De qual área são esses professores?
 ^ 1. Engenharia Mecatrônica
 ^ 2. Formacao Geral
 ^ 3. Informática 
@@ -110,17 +110,17 @@
 ^ 5. Todos  {topic=searchprof}
 
 + (sim|s)
-- Otimo,o que deseja saber?
+- Ótimo, o que deseja saber?
 
 + (sim|s) * {weight=100}
 @ <star2>
 
 + (nao|n|apenas isso|so isso|nada) [*]
-- Ok, vamos falar de outra coisa :D. {topic=random}
+- Ok, vamos falar de outra coisa. :D{topic=random}
 
 + *
-- Nao entendi muito bem, pode reformular a pergunta?
-- Nao sei nada sobre isso... na verdade nao entendi a pergunta. 
+- Não entendi muito bem, pode reformular a pergunta?
+- Não sei nada sobre isso... na verdade não entendi a pergunta. 
 ^ Quer continuar com as perguntas sobre os professores?
 
 
@@ -128,34 +128,34 @@
 // Search professor ================================================================
 > topic searchprof
     + _
-    - Eu preciso saber de qual area o professor e de acordo com as opcoes que eu te passei.
-    - Nao consigo entender muito bem, meus criadores acharam muito difi... quer dizer, eu so preciso
-    ^ do numero para entender. Comunicacao mais facil,entende? :)
+    - Eu preciso saber de qual área o professor e de acordo com as opções que eu te passei.
+    - Não consegui  entender qual numero você quis dizer.  :(
+
 
     + #
     * <star> == 1 => <call>professoresarea meca</call>
-    ^ Deseja continuar falando sobre professores ? 
+    ^ Deseja continuar falando sobre professores? 
     * <star> == 2 => <call>professoresarea geral</call>
-    ^ Deseja continuar falando sobre professores ? 
+    ^ Deseja continuar falando sobre professores? 
     * <star> == 3 => <call>professoresarea info </call>
-    ^ Deseja continuar falando sobre professores ? 
+    ^ Deseja continuar falando sobre professores? 
     * <star> == 4 => <call> professoresarea moda </call>
-    ^ Deseja continuar falando sobre professores ? 
+    ^ Deseja continuar falando sobre professores? 
     * <star> == 5 => <call> professoresarea all</call>
-    ^ Deseja continuar falando sobre professores ? 
-    - Eh,parece que voce errou o numero ein.
+    ^ Deseja continuar falando sobre professores? 
+    - Parece que você não mandou o numero certo. 
 
     + (sim|s)
-    - Otimo,o que deseja saber? {topic=professores}
+    - Ótimo,o que deseja saber? {topic=professores}
     + (sim|s) *
     - {topic=professores} {@<star2>}
     + (nao|n)
-    - Otimo,vamos falar de outra coisa {topic=random}
+    - Ótimo,vamos falar de outra coisa {topic=random}
 
 
     + *
-    - Nao entendi
-    + (esqueca|mudar de assunto|mudar *)
+    - Não entendi
+    + (esque(c|ç)a|mudar de assunto|mudar *)
     - Ok,vamos conversar de outra coisa {topic=random}
     + voltar
     - Ok,vamos continuar falando sobre professores {topic=professores}
@@ -167,10 +167,10 @@
 
 
 // Tecnicos adminitstrativos
-+ [*] tecnic(o|os) administrativ(o|os) [*]
-- O que deseja saber sobre os tecnicos administrativos?{topic=tecadmin}
++ [*] t(e|é)cnic(o|os) administrativ(o|os) [*]
+- O que deseja saber sobre os técnicos administrativos?{topic=tecadmin}
 
-+ [*] tecnic(o|os) administrativ(o|os) * {weight=100}
++ [*] t(e|é)cnic(o|os) administrativ(o|os) * {weight=100}
 - {topic=tecadmin} {@ <star3>}
 
 
@@ -178,31 +178,31 @@
 > topic tecadmin
 
 + [*] trabalham [*]
-- E possivel conferir quais os tecnicos administrativos no link :
+- É possível conferir quais os técnicos administrativos no link:
 ^ https://www.divinopolis.cefetmg.br/institucional-4/tecnicos-administrativos/
 ^ Deseja saber algo a mais?
 
 
 + (sim|s)
-- Otimo,o que deseja saber?
+- Ótimo,o que deseja saber?
 
 + (sim|s) *
 @ <star2>
 
-+ (nao|n|apenas isso|so isso|nada) [*]
++ (n(a|ã)o|n|apenas isso|só isso|nada) [*]
 - Ok, vamos falar de outra coisa :D. {topic=random}
 
 + *
-- Nao entendi muito bem, pode reformular a pergunta?
-- Nao sei nada sobre isso... na verdade nao entendi a pergunta. 
-^ Quer continuar com as perguntas sobre os tecnicos administrativos?
+- Não entendi muito bem, pode reformular a pergunta?
+- Não sei nada sobre isso... na verdade não entendi a pergunta. 
+^ Quer continuar com as perguntas sobre os técnicos administrativos?
 < topic
 
 + (quais|qual|quem) [*] coordenado(r|res) [*] curs(o|os) [*]
-- E possivel conferir essa informacao no link : https://www.divinopolis.cefetmg.br/institucional-4/estrutura-organizacional/ 
+- É possível conferir essa informação no link: https://www.divinopolis.cefetmg.br/institucional-4/estrutura-organizacional/ 
 
 + [*] (informac(oes|ao)|sobre) [*] setores [*]
-- E possivel conferir essa informacao no link : https://www.divinopolis.cefetmg.br/institucional-4/estrutura-organizacional/ 
+- É possível conferir essa informação no link: https://www.divinopolis.cefetmg.br/institucional-4/estrutura-organizacional/ 
 ^ e https://www.divinopolis.cefetmg.br/quadro-de-contatos/ 
 
 

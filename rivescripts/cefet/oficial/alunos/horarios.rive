@@ -2,22 +2,22 @@
 ! var horariotecnico    = https://www.divinopolis.cefetmg.br/alunos/horario-2/cursos-tecnicos/
 ! var horariograduacao  = https://www.divinopolis.cefetmg.br/alunos/horario-2/graduacao-2/ 
 ! var horariolabs       = https://www.divinopolis.cefetmg.br/alunos/horario-2/laboratorios/
-+ [*] horari(o|os) [*]
-- Voce deve estar procurando os horario das aulas certo?
++ [*] hor(a|á)ri(o|os) [*]
+- Ahh, Voce deve estar procurando os horário das aulas, certo? 
 ^ Voce pode conferir por aqui 
 ^ {@ horarios aulas}
-^ Os horarios de laboratorios voce encontra aqui:
+^ Os horários de laboratórios voce encontra aqui:
 ^ {@ horarios laboratorios}
-+ [*] horari(o|os) [*] aul(a|as) [*] {weight=90}
++ [*] hor(a|á)ri(o|os) [*] aul(a|as) [*] {weight=90}
 - <bot horariotecnico>
 ^ e
 ^ <bot horariograduacao>
 
-+ [*] horari(o|os) [*] (superio(r|res)|graduacao) [*] {weight=100}
++ [*] hor(a|á)ri(o|os) [*] (superio(r|res)|gradua(ca|çã)o) [*] {weight=100}
 - <bot horariograduacao>
 
-+ [*] horari(o|os) [*] (tecnic(o|os)|medio|segundo grau) [*] {weight=100}
++ [*] hor(a|á)ri(o|os) [*] (tecnic(o|os)|medio|segundo grau) [*] {weight=100}
 - <bot horariotecnico>
 
-+ [*] horari(o|os) [*] (laboratori(o|os)) {weight=100}
++ [*] hor(a|á)ri(o|os) [*] (laboratori(o|os)) {weight=100}
 - <bot horariolabs>

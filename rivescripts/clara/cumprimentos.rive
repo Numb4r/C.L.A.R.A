@@ -1,36 +1,38 @@
 ! version = 2.0
 
-+ (ola|oi|ola clara|ol*|oi*|hey|eae) 
++ (olâ|oi|opa|olâ clara|ol*|oi*|hey|eae|bom dia|boa tarde|boa tarde) 
 - Hey
 - Oi
-- Ola
+- Olâ
 - Tudo bem?
 - Oie 
 - Hey Hey 
 
-// + (ola|oi|ola clara|ol*|oi*|hey) * {weight=100}
-// - Ola. <star1> {@ <star1>}
+// + (olâ|oi|olâ clara|ol*|oi*|hey) * {weight=100}
+// - Olâ. <star1> {@ <star1>}
 
 
 
 // Name catcher
-+ (me chamo|meu nome e) _
++ (me chamo|meu nome é) _
 - <set name={formal}<star2>{/formal}> Iai <get name>.
 - <set name={formal}<star2>{/formal}> Prazer,me chamo <bot name>
 // - <set name=<formal>> Prazer, me chamo Clara.
 
 // Numero como nome
 + meu nome e #
-- Haha,engracado, um numero.
-- Ninguem se chama dessa forma, ou pelo menos nao que eu saiba.
+- Haha,engraçado, um numero.
+- Ninguém se chama dessa forma, ou pelo menos não que eu saiba.
 - Me informe seu verdadeiro nome, vamos.
 - Heh, como se eu fosse te chamar de <star>
 
-+ (qual e o meu nome|como eu me chamo|qual o meu nome)
-* <get name> == undefined => Acho que nao nos apresentamos ainda.
-- Seu nome e <get name>, e claro.
++ (qual é o meu nome|como eu me chamo|qual o meu nome)
+* <get name> == undefined => Acho que não nos apresentamos ainda.
+- Seu nome é <get name>, é claro.
 - Voce se chama <get name>, eu sempre lembro dos meus amigos.
 - <get name>, um nome muito bonito por sinal.
 
 
-
++ ([*] como [*] (est(a|á)|ta)?|tudo bem?)
+- Estou otima, meio cansada pelas aulas mas de resto tudo bem. ^^
+- Estou bem, obrigado por perguntar.

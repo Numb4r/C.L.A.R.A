@@ -2,7 +2,7 @@
 ! array ere = ere|ensino remoto|ensino remoto emergencial
 ! array ed = ed|educacao a distancia|educacao distancia
 // + [*] @ere [*]
-// - Voce pode encontrar todas as informacoes sobre o ensino remoto emergencial no site oficial do CEFET-MG:
+// - Você pode encontrar todas as informações sobre o ensino remoto emergencial no site oficial do CEFET-MG:
 // ^ https://www.cefetmg.br/ensino-remoto-emergencial/ 
 // ^ https://www.cefetmg.br/ensino-remoto-emergencial/perguntas-e-respostas/
 
@@ -11,7 +11,7 @@
 
 + [*] (@ere|pandemia) [*] {weight=1}
 - O CEFET-MG instituiu no dia 12 de março de 2020 um Comitê Gestor de Crise, com a finalidade de elaborar plano de contingência e orientar sobre ações necessárias para o enfrentamento da emergência de saúde pública. 
-^ Os servidores estão trabalhando remotamente e as aulas estão acontecendo também de maneira remota. Ainda não temos a previsão para um retorno presencial das atividades.
+^ Os servidores estão trabalhando remotamente e as aulas estão acontecendo também de maneira remota. Ainda não temos a previsão para um retorno presencial das atividades. (Quero que voltem logo T-T)
 ^ Mais informações podem ser obtidas em:\n 
 ^ https://www.cefetmg.br/coronavirus/medidas-institucionais/ 
 ^ https://www.cefetmg.br/ensino-remoto-emergencial/
@@ -30,21 +30,21 @@
 
 
 + [*] (@ere|@ed) (x|vs|versus) (@ere|@ed) [*] {weight=100}
-- Mais autonomia para o professor e maior contato com os estudantes são vantagens do Ensino Remoto Emergencial em relação a Educação a Distância.
+- Mais autonomia para o professor e maior contato com os estudantes são vantagens do Ensino Remoto Emergencial em relação à Educação a Distância. (Mesmo assim tenho um pouco de vergonha em falar nas video chamadas -_- )
 ^ Mais informações podem ser obtidas em:
 ^ https://www.cefetmg.br/noticias/professores-comentam-a-diferenca-entre-o-ensino-remoto-emergencial-e-ead/ 
 
-+ [*] diferen(ca|cas) [*] (@ere|@ed) [*] (@ere|@ed) {weight=100}
++ [*] diferen(ca|cas|ça|ças) [*] (@ere|@ed) [*] (@ere|@ed) {weight=100}
 @ ed vs ere
 
-+ [*] normas [*] (tecnic(o|os)|[ensino ]medio) [*]
++ [*] normas [*] (t(e|é)cnic(o|os)|[ensino ]m(e|é)dio) [*]
 - A Diretoria de Educação Profissional e Tecnológica (DEPT) é um órgão Executivo Especializado que supervisiona e coordena a execução das atividades de 
 ^ educação profissional e tecnológica no âmbito da Instituição, competindo-lhe, para esse fim,
 ^ implementar as deliberações dos Órgãos Colegiados Superiores e do Conselho de Educação Profissional e Tecnológica (CEPT).
 ^ Para obter mais informações sobre as normas, resoluções que regem os cursos técnicos de nível médio do CEFET-MG, você pode acessar o seguinte endereço:
 ^ https://www.dept.cefetmg.br/ensino-remoto-emergencial-ere/ 
 
-+ [*] normas [*] (superio(r|res)|graduacao)[*]
++ [*] normas [*] (superio(r|res)|gradua(ca|çã)o)[*]
 - A Diretoria de Graduação - DIRGRAD é o órgão executivo especializado que supervisiona e coordena a execução das atividades de ensino de graduação no âmbito 
 ^ da Instituição, competindo–lhe, para esse fim, implementar as deliberações dos órgãos colegiados superiores e do Conselho de Graduação.
 ^ Para obter mais informações sobre as normas, resoluções que regem os cursos de graduação do CEFET-MG, você pode acessar o seguinte endereço:

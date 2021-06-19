@@ -14,10 +14,10 @@ const link  = 'https://www.cefetmg.br/noticias/'
     })
     return news
 	} catch (error) {
-    return "Nao consegui encontrar as noticias nesse momento. Mais tarde talvez?"
+    return "Não consegui encontrar as notícias nesse momento. Mais tarde talvez? :("
 	} 
 < object
 
 + [*] noticias [*]
-- Aqui estao as ultimas noticias:  \n
+- Aqui estão as ultimas notícias:  \n
 ^ <call>noticias</call>

@@ -1,9 +1,9 @@
 ! version = 2.0
 
-+ [*] servidor [*] (formulari(o|os)|requeriment(o|os)) [*]
--  Voce gostaria de qual tipo de formulario ? \n 
-^ 1.Diarias e Passagens \n
-^ 2.Solicitacao Servidores para Viagens e Eventos \n
++ [*] servidor [*] (formul(a|á)ri(o|os)|requeriment(o|os)) [*]
+-  Você gostaria de qual tipo de formulário ? \n 
+^ 1.Diárias e Passagens \n
+^ 2.Solicitação Servidores para Viagens e Eventos \n
 ^ 3.Solicitação Veiculo Oficial\n 
 ^ 4.Solicitação de Transporte (Setor de Transportes – BH) \n 
 ^ 5.(Restaurante) Formulário de atendimento a visitante {topic=formsserv}
@@ -21,7 +21,7 @@
 ^ Deseja algo mais?
 * <star> == 5 => http://www.spe.cefetmg.br/formulario-visitantes/ \n 
 ^ Deseja algo mais?
-- Nao consegui encontrar o formulario. Deseja algo mais? 
+- Não consegui encontrar o formulario. Deseja algo mais? 
 
 + (sim|s)
 - Qual outro formulario deseja?
@@ -33,8 +33,8 @@
 - Ok, vamos para outro assunto {topic=random}
 
 + *
-- Desculpe, preciso que me diga o numero do formulario que deseja. 
-- Nao entendi, pode me dizer o numero do formulario ?
+- Desculpe, preciso que me diga o número do formulário que deseja. 
+- Não entendi, pode me dizer o número do formulário ?
 
 
 < topic
