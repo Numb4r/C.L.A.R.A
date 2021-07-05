@@ -1,5 +1,5 @@
 # C.L.A.R.A
-C.L.A.R.A,ou Clara, (Central Lógica de Atendimento e Redirecionamento de Aluno) e um chatbot que pretende ajudar os alunos do CEFET-MG Campus V (Divinopolis) sobre os assuntos relacionados a instituicao, as aulas e de forma geral. Ela e representada como uma aluna da instituicao com o intuito de se aproximar mais do usuario final.
+C.L.A.R.A,ou Clara, (Central Lógica de Atendimento e Redirecionamento de Aluno) e um chatbot que pretende ajudar os alunos do CEFET-MG Campus V (Divinópolis) sobre os assuntos relacionados a instituição, as aulas e de forma geral. Ela e representada como uma aluna da instituição com o intuito de se aproximar mais do usuário final.
 
 # Como rodar
 
@@ -10,31 +10,25 @@ $ git clone https://github.com/Numb4r/C.L.A.R.A.git
 $ cd C.L.A.R.A
 $ npm install
 ```
-Apos isso, execute ``$ npx riveshell rivescripts`` e voce podera usar a Clara em modo CLI
+Apos isso, execute ``$ npx riveshell rivescripts`` e você poderá usar a Clara em modo CLI.
 
-Voce ainda pode usar ela como um bot do Discord,basta criar um arquivo ``config.json`` onde
-ira ficar a chave de desenvolvimento.([Como criar um bot no Discord](https://www.techtudo.com.br/dicas-e-tutoriais/2020/01/como-criar-bot-no-discord.ghtml))
+Você ainda pode testar um exemplo de chat direto pelo navegador executando `node run` que utiliza socket.io para a comunicacao cliente/servidor. Depois
+que o servidor estiver rodando, basta entrar em `localhost:30120`
 
-Dentro do arquivo ``config.json``, a estrutura deve ficar da seguinte forma
-```
-{
-    "BOT_TOKEN":"botkey"
-}
-```
-Apos isso,execute ``node discord.js`` e o chatbot estara disponivel para conversa.
+
 
 # Roadmap 
-- [ ] Cumprir as principais exigencias do chatbot  
+- [ ] Cumprir as principais exigências do chatbot  
   
   - [ ] Monitoria atual 
   - [X] Professores atuais
   - [X] Email dos professores e da administração 
-  - [X] Calendario letivo 
+  - [X] Calendário letivo 
   - [ ] Grade curricular dos cursos 
   - [X] Noticias 
-  - [X] Estagios 
+  - [X] Estágios 
   - [ ] Documentos 
-- [ ] Criar uma interface com algum meio
-- [ ] Conectividade com um banco de dados para armazenar sugestoes
+- [X] Criar uma interface com algum meio
+- [ ] Conectividade com um banco de dados para armazenar sugestões
 - [ ] Ampliar a personalidade da Clara
-- [X] Correcao gramatical
+- [X] Correção gramatical
