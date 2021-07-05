@@ -1,0 +1,9 @@
+! version = 2.0
+> object javascript horarios
+
+< object
+
+
+
++ [*] contat(o|os) [*]
+- É possivel encontrar o quadro de horarios no link https://www.divinopolis.cefetmg.br/quadro-de-contatos/ 
