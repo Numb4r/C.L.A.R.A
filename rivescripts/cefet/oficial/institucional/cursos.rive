@@ -1,15 +1,70 @@
 ! version = 2.0
+//TODO: fazer de forma mais inteligente
+> object cursos javascript
+    var cursos    = arguments[1]
+    const nivel = ["superior", "superiores", "graduacao", "tecnico", "medio", "pos", "pos graduacao"]
+    const tMeca = ["tecnico mecatronica", "tecnico em mecatronica"]
+    const tEletc = ["eletromecanica", "tecnico eletromecanica"]
+    const tInfo = ["informatica", "tecnico informatica", "informatica para internet", "tecnico informatica para internet", "informatica noturno"]
+    const tModa = ["tecnico moda", "tecnico producao de moda", "producao de moda"]
+    const sMeca = ["mecatronica", "superior mecatronica", "engenharia mecatronica"]
+    const sComp = ["computacao", "superior computacao", "engenharia da computacao", "engenharia de computacao"]
+    const sModa = ["superior moda", "superior de moda", "design de moda", "moda"]
+    var links = {
+        tMeca: "https://www.demdv.cefetmg.br/tecnico-em-mecatronica-6/",
+        tInfo: "https://www.digddv.cefetmg.br/informatica/apresentacao/",
+        tModa: "https://www.digddv.cefetmg.br/apresentacao-3/",
+        tEletc: "https://www.demdv.cefetmg.br/apresentacao-3/",
+        tInfInt: "https://www.digddv.cefetmg.br/apresentacao-2/",
+        sModa: "https://www.designdemoda.divinopolis.cefetmg.br/informacoes-do-curso/",
+        sMeca: "https://www.eng-mecatronica.divinopolis.cefetmg.br/informacoes-do-curso-2/",
+        sComp: "https://www.eng-computacao.divinopolis.cefetmg.br/2019/03/18/informacoes-do-curso/",
+        pos: "https://www.cgpgl.cefetmg.br/category/dv/"
+    }
+    cursos = cursos.toString()
+    cursos = cursos.replace(/,/g," ")
+    if (sMeca.includes(cursos)) var response = links["sMeca"]
+    else if (sComp.includes(cursos)) var response = links["sComp"]
+    else if (sModa.includes(cursos)) var response = links["sModa"]
+    else if (tMeca.includes(cursos)) var response = links["tMeca"]
+    else if (tEletc.includes(cursos)) var response = links["tEletc"]
+    else if (tInfo.includes(cursos)) var response = links["tInfo"]
+    else if (tModa.includes(cursos)) var response = links["tModa"]
+    else if (nivel.includes(cursos)) {
+        if (cursos === "tecnico".toString() || cursos === "medio".toString())
+            var response = links["tMeca"] + "\n" + links["tEletc"] + "\n" + links["tInfo"] + "\n" + links["tModa"]
+        if (cursos === "superior" || cursos === "superiores" || cursos === "graduacao")
+            var response = links["sMeca"] + "\n" + links["sComp"] + "\n" + links["sModa"]
+        else if (cursos == "pos")
+            var response = links["pos"]
+    } else {
+        var response = cursos
+    }
+    return response
+
+    
+
+< object
+
+
+// TODO : Corrigir erros de portugues nessa parte
+
+
+
 
 + [*] quais [*] cursos [*]
-- O CEFET-MG Campus Divinópolis possui:
-^ -> Cursos técnicos integrados de nível médio em: Informática, Mecatrônica e Produção de Moda. 
-^ -> Cursos técnicos: subsequentes e concomitantes (Noturnos): Eletromecânica e Informática para Internet.
-^ -> Cursos superiores: Design de Moda, Engenharia de Computação e Engenharia Mecatrônica
-^ -> Curso de Pós-graduação Lato Sensu em Sistemas e Dispositivos Mecatrônicos
-^ -> Curso de Pós-graduação Stricto Sensu: Mestrado Profissional em Educação Profissional e Tecnológica – PROFEPT
-^ Informações específicas sobre os cursos estão disponíveis no menu Cursos em:
+- O CEFET-MG Campus Divinópolis possui: \n
+^ -> Cursos técnicos integrados de nível médio em: Informática, Mecatrônica e Produção de Moda. \n
+^ -> Cursos técnicos: subsequentes e concomitantes (Noturnos): Eletromecânica e Informática para Internet. \n
+^ -> Cursos superiores: Design de Moda, Engenharia de Computação e Engenharia Mecatrônica. \n
+^ -> Curso de Pós-graduação Lato Sensu em Sistemas e Dispositivos Mecatrônicos.\n
+^ -> Curso de Pós-graduação Stricto Sensu: Mestrado Profissional em Educação Profissional e Tecnológica – PROFEPT.\n
+^ Informações específicas sobre os cursos estão disponíveis no menu Cursos em:\n
 ^ https://www.divinopolis.cefetmg.br/ 
 
  
-+ [*] cursos [*] 
++ [*] curs(o|os) [*] 
 @ quais cursos
+
++ [*] curs(o|os) * {weight=100}
+- <call>cursos <star2></call>
