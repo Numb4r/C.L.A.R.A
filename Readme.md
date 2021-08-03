@@ -15,20 +15,3 @@ Apos isso, execute ``$ npx riveshell rivescripts`` e você poderá usar a Clara 
 Você ainda pode testar um exemplo de chat direto pelo navegador executando `node run` que utiliza socket.io para a comunicacao cliente/servidor. Depois
 que o servidor estiver rodando, basta entrar em `localhost:30120`
 
-
-
-# Roadmap 
-- [ ] Cumprir as principais exigências do chatbot  
-  
-  - [ ] Monitoria atual 
-  - [X] Professores atuais
-  - [X] Email dos professores e da administração 
-  - [X] Calendário letivo 
-  - [ ] Grade curricular dos cursos 
-  - [X] Noticias 
-  - [X] Estágios 
-  - [ ] Documentos 
-- [X] Criar uma interface com algum meio
-- [ ] Conectividade com um banco de dados para armazenar sugestões
-- [ ] Ampliar a personalidade da Clara
-- [X] Correção gramatical
